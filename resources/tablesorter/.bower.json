@@ -1,0 +1,12 @@
+{
+  "name": "tablesorter",
+  "homepage": "https://github.com/christianbach/tablesorter",
+  "_release": "6b998d9dea",
+  "_resolution": {
+    "type": "commit",
+    "commit": "6b998d9dea1bb7e98bdc0e3ce4a2504a970c2140"
+  },
+  "_source": "git://github.com/christianbach/tablesorter.git",
+  "_target": "6b998d9dea1bb7e98bdc0e3ce4a2504a970c2140",
+  "_originalSource": "git://github.com/christianbach/tablesorter"
+}

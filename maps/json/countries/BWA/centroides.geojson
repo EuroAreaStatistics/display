@@ -1,0 +1,38 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 1, "NAME_1": "Central", "HASC_1": "BW.CE", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "Centre|Ngwato|Serowe-Palapye" }, "geometry": { "type": "Point", "coordinates": [ 26.271682723909372, -21.538796729916463 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 2, "NAME_1": "Chobe", "HASC_1": "BW.CH", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "<Null>" }, "geometry": { "type": "Point", "coordinates": [ 24.803800325448726, -18.512696878246953 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 3, "NAME_1": "Francistown", "HASC_1": "BW.FR", "CCN_1": 0, "CCA_1": "", "TYPE_1": "City", "ENGTYPE_1": "City", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ 27.497112841440586, -21.17731238063865 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 4, "NAME_1": "Gaborone", "HASC_1": "BW.GB", "CCN_1": 0, "CCA_1": "", "TYPE_1": "City", "ENGTYPE_1": "City", "NL_NAME_1": "", "VARNAME_1": "<Null>" }, "geometry": { "type": "Point", "coordinates": [ 25.931149717870021, -24.619619623726273 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 5, "NAME_1": "Ghanzi", "HASC_1": "BW.GH", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "Ghantsi" }, "geometry": { "type": "Point", "coordinates": [ 22.599457514614812, -22.294119793694964 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 6, "NAME_1": "Jwaneng", "HASC_1": "BW.JW", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Town", "ENGTYPE_1": "Town", "NL_NAME_1": "", "VARNAME_1": "<Null>" }, "geometry": { "type": "Point", "coordinates": [ 24.731131153406167, -24.607074962852085 ] } }
+,
+{ "type": "Feature", "id": 6, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 7, "NAME_1": "Kgalagadi", "HASC_1": "BW.KG", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ 21.753468453116323, -24.856264223734048 ] } }
+,
+{ "type": "Feature", "id": 7, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 8, "NAME_1": "Kgatleng", "HASC_1": "BW.KL", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ 26.351842089172024, -24.152417593589057 ] } }
+,
+{ "type": "Feature", "id": 8, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 9, "NAME_1": "Kweneng", "HASC_1": "BW.KW", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ 24.6863365491485, -23.862785432067238 ] } }
+,
+{ "type": "Feature", "id": 9, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 10, "NAME_1": "Lobatse", "HASC_1": "BW.LB", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Town", "ENGTYPE_1": "Town", "NL_NAME_1": "", "VARNAME_1": "<Null>" }, "geometry": { "type": "Point", "coordinates": [ 25.685499141634619, -25.213798767538734 ] } }
+,
+{ "type": "Feature", "id": 10, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 11, "NAME_1": "North-East", "HASC_1": "BW.NE", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "North East|Bokone-Botlhaba" }, "geometry": { "type": "Point", "coordinates": [ 27.567602039739544, -21.014552128599451 ] } }
+,
+{ "type": "Feature", "id": 11, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 12, "NAME_1": "North-West", "HASC_1": "BW.NC", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "North West|Bokone-Bophirima" }, "geometry": { "type": "Point", "coordinates": [ 22.771297279731833, -19.611551142148745 ] } }
+,
+{ "type": "Feature", "id": 12, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 13, "NAME_1": "Selibe Phikwe", "HASC_1": "BW.SP", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Town", "ENGTYPE_1": "Town", "NL_NAME_1": "", "VARNAME_1": "<Null>" }, "geometry": { "type": "Point", "coordinates": [ 27.848959271944693, -21.97918813525455 ] } }
+,
+{ "type": "Feature", "id": 13, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 14, "NAME_1": "South-East", "HASC_1": "BW.SR", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "Borwa-Botlhaba" }, "geometry": { "type": "Point", "coordinates": [ 25.772042550067269, -24.972419205854774 ] } }
+,
+{ "type": "Feature", "id": 14, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 15, "NAME_1": "Southern", "HASC_1": "BW.SO", "CCN_1": 0, "CCA_1": "", "TYPE_1": "District", "ENGTYPE_1": "District", "NL_NAME_1": "", "VARNAME_1": "Borwa|Ngwakets|Ngwaketse" }, "geometry": { "type": "Point", "coordinates": [ 24.46551780635204, -24.924800196732061 ] } }
+,
+{ "type": "Feature", "id": 15, "properties": { "ID_0": 31, "ISO": "BWA", "NAME_0": "Botswana", "ID_1": 16, "NAME_1": "Sowa", "HASC_1": "BW.ST", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Town", "ENGTYPE_1": "Town", "NL_NAME_1": "", "VARNAME_1": "<Null>" }, "geometry": { "type": "Point", "coordinates": [ 26.222942045457959, -20.56398360697418 ] } }
+
+]
+}

@@ -1,0 +1,12 @@
+{
+  "name": "gosquared-flags",
+  "homepage": "https://github.com/gosquared/flags",
+  "_release": "a1f4a551ff",
+  "_resolution": {
+    "type": "commit",
+    "commit": "a1f4a551ff43d22cb71b9bf9c51890ecf59ec6b6"
+  },
+  "_source": "git://github.com/gosquared/flags.git",
+  "_target": "a1f4a551ff43d22cb71b9bf9c51890ecf59ec6b6",
+  "_originalSource": "git://github.com/gosquared/flags"
+}

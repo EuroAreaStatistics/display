@@ -1,0 +1,37 @@
+#containterCheckboxesCorporatesTotal input[type=checkbox]{
+    display: none;
+}
+
+#containterCheckboxesLoanToDepositRatio input[type=checkbox]{
+    display: none;
+ }
+
+
+.checkboxlabel{
+    background-color: #E0E0E0;
+    display: inline-block;
+    width: 137px;
+    height: 18px;
+       font-size: 12px;
+       font-family: Arial;
+       margin: 1px;
+       padding-top: 4px;
+       text-align: center;
+       cursor: pointer;
+}
+
+@media (max-width: 873px) {
+  .checkboxlabel {
+    width: 98px;
+  }
+}
+
+#containterCheckboxesCorporatesTotal input[type=checkbox]:checked+.checkboxlabel {
+       color: #fff;
+    background-color: #004996;
+}
+
+#containterCheckboxesLoanToDepositRatio input[type=checkbox]:checked+.checkboxlabel {
+       color: #fff;
+    background-color: #004996;
+}

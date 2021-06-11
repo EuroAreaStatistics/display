@@ -1,0 +1,22 @@
+
+$defaultFontFamily        : BerniniSansWeb, sans-serif;
+$defaultFontFamilyNarrow  : BerniniSansWeb-Narrow;
+
+$alternateFontFamily      : PMNCaecilia;
+
+$selectBackgroundImage    : url(../../02resources/img/oecd/select_arrow.png);
+
+$HFbackgroundColor1       : #494444;
+/*$HFbackgroundColor1       : #040656;*/
+
+$HFbackgroundColor2       : #d7d7d7;
+$HFColor                  : #d7d7d7;
+/*$HFbackgroundColor2       : #FFF;*/
+/*$HFColor                  : #FFF;*/
+$HFnavActiveColor         : #494444;
+$HFhomeColor              : #93C739;
+$HFlogoColor              : #FFF;
+$HFnavActivBackground    : #FFF;
+
+
+@import 'components';

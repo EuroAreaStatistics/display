@@ -1,0 +1,99 @@
+{
+  "mapWizard" : {
+    "template" : "mapChartWizard.php",
+    "css" : ["mapWizard.css"],
+    "js"  : ["mapWizardSimple.min.js"],
+    "resourcesCSS" : ["leaflet-dist/leaflet.css","jquery-ui/themes/smoothness/jquery-ui.min.css"],
+    "resourcesJS" : ["leaflet-dist/leaflet.js","jquery-ui/jquery-ui.min.js"]
+  },
+
+  "mapWizardStandard" : {
+    "template" : "mapChartWizard.php",
+    "css" : ["mapWizard.css"],
+    "js"  : ["mapWizardLayer.min.js"],
+    "resourcesCSS" : ["tablesorter/themes/blue/style.css","leaflet-dist/leaflet.css","jquery-ui/themes/smoothness/jquery-ui.min.css"],
+    "resourcesJS" : ["tablesorter/jquery.tablesorter.min.js","highcharts-release/highcharts.js","leaflet-dist/leaflet.js","jquery-ui/jquery-ui.min.js"]
+  },
+
+  "barsTable" : {
+    "template" : "barsTable.php",
+    "css" : ["barsTable.css"],
+    "js"  : ["barsTable.min.js"],
+    "resourcesCSS" : ["tablesorter/themes/blue/style.css","jquery-ui/themes/smoothness/jquery-ui.min.css"],
+    "resourcesJS" : ["tablesorter/jquery.tablesorter.min.js","jquery-ui/jquery-ui.min.js"]
+  },
+
+  "simpleChart" : {
+    "template" : "simpleChart.php",
+    "css" : ["simpleChart.css"],
+    "js"  : ["simple.min.js"],
+    "resourcesCSS" : [],
+    "resourcesJS" : ["highcharts-release/highcharts.js"]
+  },
+
+  "stackedAreaChart" : {
+    "template" : "stackedAreaChart.php",
+    "css" : ["simpleChart.css"],
+    "js"  : ["stacked.min.js"],
+    "resourcesCSS" : ["jquery-ui/themes/smoothness/jquery-ui.min.css"],
+    "resourcesJS" : ["highcharts-release/highcharts.js","jquery-ui/jquery-ui.min.js"]
+  },
+
+  "regionalTable" : {
+    "template" : "regionalTable.php",
+    "css" : ["simpleChart.css"],
+    "js"  : ["regionalTable.min.js"],
+    "resourcesCSS" : [],
+    "resourcesJS" : []
+  },
+
+  "DownloadPage" : {
+    "template" : "downloadPage.php",
+    "css" : ["downloadPage.css"],
+    "js"  : ["downloadPage.min.js"],
+    "resourcesCSS" : [],
+    "resourcesJS" : []
+  },
+
+  "BarsLines" : {
+    "template" : "barsLines.php",
+    "css" : ["chartStandard.css","barsLines.css"],
+    "js"  : ["fourLines.min.js","barsLines.min.js"],
+    "resourcesCSS" : ["jquery-ui/themes/smoothness/jquery-ui.min.css"],
+    "resourcesJS" : ["highcharts-release/highcharts.js","jquery-ui/jquery-ui.min.js"]
+  },
+
+  "FourLines" : {
+    "template" : "standardChart.php",
+    "css" : ["chartStandard.css"],
+    "js"  : ["fourLines.min.js"],
+    "resourcesCSS" : ["jquery-ui/themes/smoothness/jquery-ui.min.css"],
+    "resourcesJS" : ["highcharts-release/highcharts.js","jquery-ui/jquery-ui.min.js"]
+  },
+
+  "dataDownload" : {
+    "template" : "dataDownload.php",
+    "css" : [],
+    "js"  : [],
+    "resourcesCSS" : [],
+    "resourcesJS" : []
+  },
+
+  "flowDiagram" : {
+    "template" : "flowDiagram.php",
+    "css" : [],
+    "js"  : [],
+    "resourcesCSS" : [],
+    "resourcesJS" : []
+  },
+
+  "flowDiagram2" : {
+    "template" : "flowDiagram2.php",
+    "css" : [],
+    "js"  : [],
+    "resourcesCSS" : [],
+    "resourcesJS" : []
+  }
+
+
+}

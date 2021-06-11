@@ -1,0 +1,60 @@
+{
+    "bank-interest-rates": {
+        "projects": [
+            "bank-interest-rates-deposits",
+            "bank-interest-rates-loans"
+        ]
+    },
+    "banks-balance-sheet": {
+        "projects": [
+            "banks-balance-sheet-deposits",
+            "banks-balance-sheet-loans"
+        ]
+    },
+    "competitiveness-indicators": {
+        "projects": [
+            "competitiveness-indicators"
+        ]
+    },
+    "external-sector": {
+        "projects": [
+            "external-sector",
+            "current-account-by-main-counterparties",
+            "external-debt",
+            "financial-account",
+            "international-investment-position",
+            "reserve-assets"
+        ]
+    },
+    "inflation-rates": {
+        "projects": [
+            "inflation-rates"
+        ]
+    },
+    "investment-funds": {
+        "projects": [
+            "investment-funds-assets",
+            "investment-funds-liabilities",
+            "investment-funds-policies",
+            "investment-funds-types"
+        ]
+    },
+    "macro-economic-indicators": {
+        "projects": [
+            "macro-economic-indicators",
+            "macroeconomic-scoreboard"
+        ]
+    },
+    "securities": {
+        "projects": [
+            "securities-debt-securities",
+            "securities-quoted-shares"
+        ]
+    },
+    "financing-and-investment-dynamics": {
+        "projects": [
+            "financing-and-investment-dynamics",
+            "financing-and-investment-dynamics2"
+        ]
+    }
+}

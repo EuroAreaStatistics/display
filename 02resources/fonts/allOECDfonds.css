@@ -1,0 +1,97 @@
+
+  @font-face {
+    font-family: "PMNCaecilia";
+    font-style: normal;
+    font-weight: 400;
+    src: url("PMNCaeciliaW01-55Roman.eot");
+    src: url("PMNCaeciliaW01-55Roman.eot#iefix") format("embedded-opentype"),
+         url("PMNCaeciliaW01-55Roman.woff") format("woff"),
+         url("PMNCaeciliaW01-55Roman.ttf") format("truetype"),
+         url("PMNCaeciliaW01-55Roman.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "PMNCaecilia";
+    font-style: normal;
+    font-weight: 700;
+    src: url("PMNCaeciliaW01-75Bold.eot");
+    src: url("PMNCaeciliaW01-75Bold.eot#iefix") format("embedded-opentype"),
+         url("PMNCaeciliaW01-75Bold.woff") format("woff"),
+         url("PMNCaeciliaW01-75Bold.ttf") format("truetype"),
+         url("PMNCaeciliaW01-75Bold.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "PMNCaecilia";
+    font-style: normal;
+    font-weight: 800;
+    src: url("PMNCaeciliaW01-85Heavy.eot");
+    src: url("PMNCaeciliaW01-85Heavy.eot#iefix") format("embedded-opentype"),
+         url("PMNCaeciliaW01-85Heavy.woff") format("woff"),
+         url("PMNCaeciliaW01-85Heavy.ttf") format("truetype"),
+         url("PMNCaeciliaW01-85Heavy.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "PMNCaecilia";
+    font-style: italic;
+    font-weight: 400;
+    src: url("PMNCaeciliaW01-56Italic.eot");
+    src: url("PMNCaeciliaW01-56Italic.eot#iefix") format("embedded-opentype"),
+         url("PMNCaeciliaW01-56Italic.woff") format("woff"),
+         url("PMNCaeciliaW01-56Italic.ttf") format("truetype"),
+         url("PMNCaeciliaW01-56Italic.svg") format("svg");
+  }
+
+  @font-face {
+    font-family: "PMNCaecilia";
+    font-style: italic;
+    font-weight: 700;
+    src: url("PMNCaeciliaW01-76BoldIt.eot");
+    src: url("PMNCaeciliaW01-76BoldIt.eot#iefix") format("embedded-opentype"),
+         url("PMNCaeciliaW01-76BoldIt.woff") format("woff"),
+         url("PMNCaeciliaW01-76BoldIt.ttf") format("truetype"),
+         url("PMNCaeciliaW01-76BoldIt.svg") format("svg");
+  }
+
+  @font-face {
+    font-family:'BerniniSansWeb';
+    font-weight: 400;
+    src:    url('BerniniSans-Web-OECD-Regular.eot?') format('-'),
+            url('BerniniSans-Web-OECD-Regular.woff') format('woff'),
+            url('BerniniSans-Web-OECD-Regular.ttf')  format('truetype');
+  }
+
+  @font-face {
+    font-family:'BerniniSansWeb';
+    font-style: italic;
+    font-weight: 400;
+    src:    url('BerniniSans-Web-OECD-Italic.eot?') format('-'),
+            url('BerniniSans-Web-OECD-Italic.woff') format('woff'),
+            url('BerniniSans-Web-OECD-Italic.ttf')  format('truetype');
+  }
+  
+  @font-face {
+    font-family:'BerniniSansWeb';
+    font-weight: 700;
+    src:    url('BerniniSans-Web-OECD-Bold.eot?') format('-'),
+            url('BerniniSans-Web-OECD-Bold.woff') format('woff'),
+            url('BerniniSans-Web-OECD-Bold.ttf')  format('truetype');
+  }
+  
+  @font-face {
+    font-family:'BerniniSansWeb-Narrow';
+    font-weight: 400;
+    src:    url('BerniniSans-Web-OECD-NarrowRegular.eot?') format('-'),
+            url('BerniniSans-Web-OECD-NarrowRegular.woff') format('woff'),
+            url('BerniniSans-Web-OECD-NarrowRegular.ttf')  format('truetype');
+  }
+  
+  @font-face {
+    font-family:'BerniniSansWeb-Narrow';
+    font-weight: 700;
+    src:    url('BerniniSans-Web-OECD-NarrowBold.eot?') format('-'),
+            url('BerniniSans-Web-OECD-NarrowBold.woff') format('woff'),
+            url('BerniniSans-Web-OECD-NarrowBold.ttf')  format('truetype');
+  }
+

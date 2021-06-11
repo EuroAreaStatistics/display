@@ -1,0 +1,33 @@
+{
+    "pt": {
+        "eur": "Área do euro",
+        "nld": "Países Baixos",
+        "gbr": "Reino Unido"
+    },
+    "it": {
+        "eur": "Area dell’euro",
+        "cze": "Repubblica Ceca"
+    },
+    "fr": {
+        "eur": "Zone euro",
+        "hkg": "Hong Kong"
+    },
+    "es": {
+        "eur": "Zona del euro",
+        "svk": "Eslovaquia",
+        "cze": "República Checa",
+        "rou": "Rumanía",
+        "hkg": "Hong Kong"
+    },
+    "en": {
+        "eur": "Euro area",
+        "svk": "Slovakia",
+        "hkg": "Hong Kong"
+    },
+    "de": {
+        "eur": "Euro-Währungsgebiet",
+        "cze": "Tschechische Republik",
+        "gbr": "Vereinigtes Königreich",
+        "hkg": "Hongkong"
+    }
+}

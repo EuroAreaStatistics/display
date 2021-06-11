@@ -1,0 +1,399 @@
+
+/* ==============
+    Colors
+   ============== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+
+.header-container,
+.footer-container{
+    color: #CBCDCA;
+    background-color: #000000;
+}
+
+
+
+
+.main {
+    color: #616160;
+    background-color: white;    
+}
+
+
+#footer a,
+#footer a:hover { 
+    color: #CBCDCA;
+}
+
+
+#footer a {
+    text-decoration: none;
+}
+
+
+#footer a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+/* Button panel*/
+
+.button{
+    color: #323232;
+    background-color: #CECECE;
+}
+
+
+.buttonactive {
+    color: #ffffff;
+    background-color: #DE3A07;
+}
+
+/*.buttonactive[series="1"] { background-color: #29799a; }*/
+/*.buttonactive[series="2"] { background-color: #9f5598; }*/
+/*.buttonactive[series="3"] { background-color: #9dd05d; }*/
+/*.buttonactive[series="4"] { background-color: #c69a0e; }*/
+/*.buttonactive[series="5"] { background-color: #FDD14E; }*/
+
+
+.buttonactive[series="1"] { background-color: #377eb8; }
+.buttonactive[series="2"] { background-color: #e41a1c; }
+.buttonactive[series="3"] { background-color: #4daf4a; }
+.buttonactive[series="4"] { background-color: #984ea3; }
+.buttonactive[series="5"] { background-color: #FDD14E; }
+
+
+
+
+.buttonactive408000 {
+    color: #ffffff;
+    background-color: #408000;
+}
+
+.buttonactiveff0000 {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+.buttonactiveBB44FF {
+    color: #ffffff;
+    background-color: #BB44FF;
+}
+
+
+
+.buttonactiveClicked {
+    color: #ffffff;
+    background-color: #408000;
+    
+}
+
+
+.buttondefault,
+.buttonactivebars {
+    color: #ffffff;
+    background-color: #0072be;
+}   
+
+
+.storybutton,
+.sharebutton,
+.sortbutton {
+    background-color: #313131;
+    color: white;
+    cursor: pointer;
+}
+
+.storybutton:hover,
+.sharebutton:hover,
+.sortbutton:hover {
+    color: #313131;
+    background-color: white;
+}
+
+
+.legendspan,
+.legendspan1,
+.legendspan2{
+    color: white;
+}
+
+
+
+/* ==============
+    Buttons
+   ============== */
+
+
+.button,
+.sharebutton,
+.storybutton,
+.sortbutton {
+	-moz-box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+	-webkit-box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+	box-shadow:inset 0px 0px 0px 0px #bbdaf7;
+	border: 0px;
+	font-size: 12px;	
+}
+
+
+.button,
+.sharebutton,
+.sortbutton,
+.roundBorders{
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright:2px;
+	-moz-border-radius-bottomleft:2px;
+	-moz-border-radius-bottomright:2px;
+	-webkit-border-top-left-radius:2px;
+	-webkit-border-top-right-radius:2px;
+	-webkit-border-bottom-left-radius:2px;
+	-webkit-border-bottom-right-radius:2px;
+	border-top-left-radius:2px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:2px;
+}
+
+
+.button{
+	width: 96%;
+	min-width: 96%;
+	height: 22px;
+	margin: 2px;	
+	}
+
+
+.button-with-long-text {
+    font-size: 9px;   
+}
+
+.button-with-very-long-text {
+    font-size: 9px;   
+}
+
+
+@media only screen and (min-width: 700px) {
+    .button-with-long-text {
+	font-size: 12px;   
+  }
+}
+
+
+.storybutton,
+.sharebutton{
+	padding: 3px 10px;
+}
+
+
+.sortbutton{
+	margin: 1px;
+	padding: 3px;
+	}
+
+
+.site-button {
+	font-size: 130%;
+	height: 80px;
+	display: inline;
+	white-space: normal;
+}
+
+
+.storybutton_left {
+	float: left;
+	-moz-border-radius-topleft: 0px;
+	-moz-border-radius-topright:2px;
+	-moz-border-radius-bottomleft:0px;
+	-moz-border-radius-bottomright:2px;
+	-webkit-border-top-left-radius:0px;
+	-webkit-border-top-right-radius:2px;
+	-webkit-border-bottom-left-radius:0px;
+	-webkit-border-bottom-right-radius:2px;
+	border-top-left-radius:0px;
+	border-top-right-radius:2px;
+	border-bottom-left-radius:0px;
+	border-bottom-right-radius:2px;
+
+}
+
+.storybutton_right {
+	float: right;
+	-moz-border-radius-topleft: 2px;
+	-moz-border-radius-topright:0px;
+	-moz-border-radius-bottomleft:2px;
+	-moz-border-radius-bottomright:0px;
+	-webkit-border-top-left-radius:2px;
+	-webkit-border-top-right-radius:0px;
+	-webkit-border-bottom-left-radius:2px;
+	-webkit-border-bottom-right-radius:0px;
+	border-top-left-radius:2px;
+	border-top-right-radius:0px;
+	border-bottom-left-radius:2px;
+	border-bottom-right-radius:0px;
+}
+
+@media only screen and (min-width: 1140px) {
+
+	.storybutton_right, .storybutton_left {
+		-moz-border-radius-topleft: 2px;
+		-moz-border-radius-topright:2px;
+		-moz-border-radius-bottomleft:2px;
+		-moz-border-radius-bottomright:2px;
+		-webkit-border-top-left-radius:2px;
+		-webkit-border-top-right-radius:2px;
+		-webkit-border-bottom-left-radius:2px;
+		-webkit-border-bottom-right-radius:2px;
+		border-top-left-radius:2px;
+		border-top-right-radius:2px;
+		border-bottom-left-radius:2px;
+		border-bottom-right-radius:2px;
+	}
+
+}
+
+
+
+.legend {
+	display: block;
+	float: left;
+	list-style: none;
+	max-height: 27px;
+	text-align: center;
+	}
+
+
+.legendleft {
+	float: left;
+	}
+
+
+.legendright {
+	float: right;
+	padding-right: 5px;
+	}
+
+.legend_span {
+    margin-top: 4px;
+}
+
+
+.legend ul {
+	margin: 0;
+	padding-left: 0px;
+	width: 100%;
+	}
+
+.legend li{
+	list-style: none;
+	float: left;
+	margin-left: 2px;
+	}
+
+.legendspan{
+	float: left;
+	display: block;
+	padding-bottom: 2px;
+	padding-top: 4px;
+	padding-left: 10px;
+	padding-right: 10px;
+	}
+
+.legendspan1{
+	float: left;
+	display: block;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 10px;
+	padding-right: 0px;
+	}
+
+.legendspan2{
+	float: left;
+	display: block;
+	padding-bottom: 3px;
+	padding-top: 3px;
+	padding-left: 0px;
+	padding-right: 10px;
+	}
+
+
+#definition {
+	list-style: none;
+	float: left;
+	margin-left: 2px;
+	text-align: center;
+}
+
+#legendtext, #legendtext1{
+	float: right;
+	text-align: center;
+	margin-right: 5px;
+}
+
+
+#legendtext a, #legendtext1 a{
+	text-decoration: none;
+}
+
+
+#sortbuttons, #sortbuttons1 {
+	float: right;
+	width: 100%;
+	display: block;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+
+#sortbuttons ul, #sortbuttons1 ul {
+	margin: 0;
+}
+
+#sortbuttons li{
+	list-style: none;
+	float: right;
+	margin-right: 5px;
+	}
+
+
+#sortbuttons1 li{
+	list-style: none;
+	float: right;
+	margin-right: 5px;
+	}
+
+
+.BarsSortText {
+    margin-top: 5px;
+ }
+
+
+#functionbuttons {
+	float: left;
+	width: 100%;
+	display: block;
+	list-style: none;
+	margin-bottom: 10px;
+}
+
+
+#functionbuttons ul {
+	margin: 0;
+}
+
+#functionbuttons li{
+	list-style: none;
+	float: left;
+	margin-left: 5px;
+	}
+

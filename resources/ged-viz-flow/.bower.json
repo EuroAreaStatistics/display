@@ -1,0 +1,12 @@
+{
+  "name": "ged-viz-flow",
+  "_release": "6c7c674617",
+  "_resolution": {
+    "type": "version",
+    "tag": "two-diagrams/v1",
+    "commit": "697c37c460c1e375c7aadbca47c52eda2e5b7e75"
+  },
+  "_source": "git@github.com:EuroAreaStatistics/flow-charts.git",
+  "_target": "two-diagrams/v1",
+  "_originalSource": "git@github.com:EuroAreaStatistics/flow-charts.git"
+}

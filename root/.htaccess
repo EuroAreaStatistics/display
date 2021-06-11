@@ -1,0 +1,4 @@
+RewriteEngine On
+
+RewriteCond %{ENV:REDIRECT_STATUS} !=200
+RewriteRule ^ /index.php [L]

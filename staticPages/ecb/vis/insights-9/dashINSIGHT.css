@@ -1,0 +1,145 @@
+body, html, button, input, select, textarea {
+    font-family: "Roboto",sans-serif;
+}
+
+html, body {
+    margin: 0;
+    width: 100%;
+}
+
+.CSSCheckbox input[type=checkbox]{
+    display: none;
+}
+
+.CSSCheckbox {
+-webkit-user-select: none;
+-moz-user-select: none;
+-khtml-user-select: none;
+-ms-user-select: none;
+}
+
+.CSSCheckboxSQUARE span:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 4px;
+}
+
+.CSSCheckboxLINE span:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 2px;
+  margin-right: 4px;
+  margin-bottom: 4px;
+}
+
+.CSSCheckbox :hover {
+  color: #000;
+}
+
+.CSSCheckbox input[type=checkbox]:checked+.checkboxlabel {
+	color: #000;
+}
+
+.checkboxlabel{
+	color: #ccc;
+    background-color: #fff;
+    display: inline-block;
+    height: 18px;
+	font-size: 12px;
+	font-family: Arial;
+	font-weight: bold;
+	margin: 1px;
+	padding-top: 4px;
+	padding-right: 14px;
+	text-align: center;
+	cursor: pointer;
+}
+
+
+#ieas article nav.tabs{width:auto}
+#ieas article nav.tabs div{width:232px;height:25px;color:#fff;background:#6b6b6b;display:inline-block;margin:25px 0;border-right:1px solid #fff;text-align:center;line-height:25px;cursor:pointer;-webkit-transition:background 250ms;-moz-transition:background 250ms;-o-transition:background 250ms;transition:background 250ms}
+#ieas article nav.tabs div.active,#ieas article nav.tabs div:hover{background:#72aac1}
+
+#article {
+    width: 800px;
+    border-top: 4px solid #72aac1;
+    padding: 10px 50px 15px;
+    box-sizing: border-box;
+    color: #222;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    margin-bottom: 20px;
+    min-height: 340px;
+}
+
+#ieas {
+	margin: 60px auto;
+	display: table;
+}
+
+#ieas article>h1 {
+    font-size: 20px;
+    color: #004996;
+    margin: 0 0 10px;
+    line-height: 18px;
+}
+
+#ieas article .date {
+    float: right;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-top: 3px;
+    margin-left: 10px;
+}
+
+#ieas>h2 {
+    margin: 0 0 20px;
+    border-top: 4px solid #72aac1;
+    font-size: 14px;
+    font-weight: 400;
+    width: 100%;
+    padding-top: 10px;
+    line-height: 18px;
+}
+
+#ieas article h3 {
+    font-family: Trebuchet, Verdana, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 15px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#ieas article {
+    width: 800px;
+    border-top: 4px solid #72aac1;
+    vertical-align: top;
+    padding: 10px 50px 15px;
+    box-sizing: border-box;
+    color: #222;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    position: relative;
+    margin-bottom: 20px;
+    min-height: 340px;
+}
+
+#ieas article nav.tabs {
+    width: auto;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
+    display: block;
+}
+
+#ieas article .tab p {
+    margin: 0 0 10px;
+    clear: both;
+    font-size: 15px;
+}
+
+#ieas>* {
+    text-align: left;
+    display: inline-block;
+}

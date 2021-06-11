@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+                                                                                
+"features": [
+{ "type": "Feature", "id": 0, "properties": { "ID_0": 84, "ISO": "GMB", "NAME_0": "Gambia", "ID_1": 1, "NAME_1": "Banjul", "HASC_1": "GM.BJ", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Independent City", "ENGTYPE_1": "Independent City", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ -16.651976690071471, 13.449244735649268 ] } }
+,
+{ "type": "Feature", "id": 1, "properties": { "ID_0": 84, "ISO": "GMB", "NAME_0": "Gambia", "ID_1": 2, "NAME_1": "Lower River", "HASC_1": "GM.LR", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Division", "ENGTYPE_1": "Division", "NL_NAME_1": "", "VARNAME_1": "Central|South Bank" }, "geometry": { "type": "Point", "coordinates": [ -15.74303000909876, 13.385884201433347 ] } }
+,
+{ "type": "Feature", "id": 2, "properties": { "ID_0": 84, "ISO": "GMB", "NAME_0": "Gambia", "ID_1": 3, "NAME_1": "Maccarthy Island", "HASC_1": "GM.MC", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Division", "ENGTYPE_1": "Division", "NL_NAME_1": "", "VARNAME_1": "Central River|Jangjangbureh|Janjanbureh|Janjangburreh" }, "geometry": { "type": "Point", "coordinates": [ -14.928973374304134, 13.599381302303637 ] } }
+,
+{ "type": "Feature", "id": 3, "properties": { "ID_0": 84, "ISO": "GMB", "NAME_0": "Gambia", "ID_1": 4, "NAME_1": "North Bank", "HASC_1": "GM.NB", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Division", "ENGTYPE_1": "Division", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ -16.008546942867081, 13.507440523924243 ] } }
+,
+{ "type": "Feature", "id": 4, "properties": { "ID_0": 84, "ISO": "GMB", "NAME_0": "Gambia", "ID_1": 5, "NAME_1": "Upper River", "HASC_1": "GM.UR", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Division", "ENGTYPE_1": "Division", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ -14.160274326816621, 13.393778764476204 ] } }
+,
+{ "type": "Feature", "id": 5, "properties": { "ID_0": 84, "ISO": "GMB", "NAME_0": "Gambia", "ID_1": 6, "NAME_1": "Western", "HASC_1": "GM.WE", "CCN_1": 0, "CCA_1": "", "TYPE_1": "Division", "ENGTYPE_1": "Division", "NL_NAME_1": "", "VARNAME_1": "" }, "geometry": { "type": "Point", "coordinates": [ -16.40155879801992, 13.24539565102079 ] } }
+
+]
+}

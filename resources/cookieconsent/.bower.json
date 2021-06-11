@@ -1,0 +1,33 @@
+{
+  "name": "cookieconsent",
+  "homepage": "http://cookieconsent.osano.com/",
+  "authors": [
+    "Osano"
+  ],
+  "description": "Osano cookie consent plugin",
+  "main": [
+    "build/cookieconsent.min.js",
+    "build/cookieconsent.min.css"
+  ],
+  "keywords": [
+    "cookieconsent",
+    "cookie",
+    "law"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "_release": "c18639f8b7",
+  "_resolution": {
+    "type": "commit",
+    "commit": "c18639f8b7a4161ecb5413f4e5b61e8687d4f4fa"
+  },
+  "_source": "git://github.com/strictd/cookieconsent.git",
+  "_target": "c18639f8b7a4161ecb5413f4e5b61e8687d4f4fa",
+  "_originalSource": "git://github.com/strictd/cookieconsent"
+}

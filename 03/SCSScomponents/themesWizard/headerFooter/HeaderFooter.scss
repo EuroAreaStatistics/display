@@ -1,0 +1,477 @@
+
+
+
+
+/*================*/
+/*Body Fonts*/
+/*================*/
+
+body, html, button, input, select, textarea {
+    font-family: $defaultFontFamily;
+}
+
+body{
+	font-size: 13px;
+}
+
+.custom-tooltip-styling {
+	font-family: $defaultFontFamily;
+}
+
+header, footer{
+	background-color:$HFbackgroundColor1;
+}
+
+header, footer, header a, footer a{
+    color: $HFColor;
+}
+
+/*================*/
+/*Header Section*/
+/*================*/
+
+#wrapper_mainNav{
+	padding:5px 0 5px 5px;
+	height:25px;
+}
+
+#wrapper_topic{
+    padding:3px;
+	padding-top:0px;
+    padding-bottom: 6px;
+	height:18px;
+}
+
+.headerContent, .footerContent{
+max-width: 1026px;
+margin-left: auto;
+margin-right: auto;
+}
+
+#logo img{
+	float:left;
+    height:20px;
+}
+
+#logo h1 {
+    float:left;
+	font-family: $defaultFontFamily;
+	font-size: 14px;
+	font-weight: bold;
+    color: $HFlogoColor;
+    padding: 2px 4px;
+    margin: 0;
+}
+
+#home {
+	float: right;
+	font-family: $defaultFontFamily;
+	font-size: 10px;
+	positionrelative: 10px;
+	position: relative;
+	right: 10px;
+	padding-top: 3px;
+}
+
+#home a, #home a:visited{
+	color: $HFhomeColor;
+	text-decoration: none;
+}
+
+#home a:active, #home a:hover, #home a:focus{
+	font-family: $defaultFontFamily;
+    font-weight: bold;
+}
+
+.select-menu{
+	float: right;
+	margin-right:10px;
+    margin-top: 3px;
+}
+
+.template-menu{
+	float: right;
+	margin-right:7px;
+}
+
+.style-select{
+    display: none;
+}
+
+#topic h1{	
+    font-size:15px;
+	font-family: $alternateFontFamily ;
+	margin:0;
+    white-space: nowrap;
+	float: left;
+}
+
+@media only screen and (min-width: 500px) {
+
+	.style-select{
+		display: inline;        
+	
+		background: $HFbackgroundColor1;
+		color: $HFbackgroundColor2;
+		width: 85px;
+		padding-left: 5px;
+		border: 1px solid $HFbackgroundColor2;
+		font-family: $defaultFontFamily;
+		font-size: 11px;
+		border-radius: 0;
+		height: 20px;        
+		overflow: hidden;
+		
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		background-image: $selectBackgroundImage;
+		background-repeat: no-repeat;
+		background-position: 66px;
+		background-size: 13px 8px;
+	}
+
+	#templateSelect {
+		width: 155px;
+		background-image: $selectBackgroundImage;
+		background-position: 136px;
+		background-size: 13px 8px;
+	}
+
+	#home {
+		font-size: 11px;
+		padding-top: 5px;
+    }
+
+	#wrapper_topic{
+		padding-top:6px;
+		padding:6px;
+		padding-bottom: 9px;
+	}
+
+	#logo img{
+        height:26px;
+    }
+    
+	#logo h1 {
+		font-size: 18px;
+    }
+        
+	#topic h1 {
+	    font-size:18px;
+    }
+ 
+}
+
+
+
+/*================*/
+/*Nav Section*/
+/*================*/
+
+
+nav{
+    width: 100%;
+}
+
+
+nav ul{
+		list-style: none;
+		white-space: nowrap;
+		margin:0;
+		padding:0;
+		width: 100%;
+		overflow: hidden;
+}
+
+nav ul li{
+		float:none;
+		margin:0;
+		padding:0 ;
+		white-space: nowrap;
+		min-width: 80px;
+}
+
+nav ul li a{
+		display: block;
+		float: left;
+		font-family: $alternateFontFamily;
+		padding: 3px 4px;
+		text-align: center;
+		text-decoration: none;
+		border-right-width: 1px;
+		border-right-style: solid;
+		border-right-color: $HFbackgroundColor2;
+		font-size: 10px;
+		min-width: 60px;
+		width: 60px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+}
+
+nav ul li:first-child a{
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: $HFbackgroundColor2;
+}
+
+
+.navactive, nav ul li a:hover{
+	background-color:$HFnavActivBackground ;
+	color:$HFnavActiveColor;
+}
+
+nav ul li a:hover {
+    width: auto;
+    max-width: 100px;
+}
+
+.navactive, .navactive:hover{
+    width: auto;
+    max-width: 120px;
+}
+
+
+@media only screen and (min-width: 400px) {
+
+	nav ul li a{
+		min-width: 70px;        
+		width: 70px;
+	}
+
+	nav ul li a:hover {
+		max-width: 110px;
+	}
+
+	.navactive, .navactive:hover{
+		width: auto;
+		max-width: none;
+	}
+
+        
+}
+
+
+@media only screen and (min-width: 475px) {
+
+	nav ul li a{
+		min-width: 100px;        
+		width: 100px;
+		padding: 4px 6px;
+		font-size: 12px;
+	}
+    
+	nav ul li a:hover {
+		max-width: 130px;
+	}
+    
+	.navactive, .navactive:hover{
+		max-width: none;
+	}
+        
+}
+
+@media only screen and (min-width: 600px) {
+
+	nav ul li a{
+		min-width: 100px;        
+		max-width: 115px;
+		width: auto;
+	}
+    
+	nav ul li a:hover {
+		max-width: 145px;
+	}
+
+}
+
+@media only screen and (min-width: 700px) {
+
+	nav ul li a{
+		max-width: 170px;
+		padding: 4px 10px;
+	}
+    
+	.navactive, nav ul li a:hover{
+		max-width: none;
+	}
+
+}
+
+@media only screen and (min-width: 800px) {
+
+	nav ul li a{
+		max-width: none;
+	}
+
+}
+
+
+/*================*/
+/*Footer Section*/
+/*================*/
+
+
+footer {
+	height: 60px;
+    width:100%;
+    z-index: 20;
+}
+
+/* map_template.css footer always fixed */
+
+
+@media only screen and (min-width: 475px) {
+
+	footer {
+		position: fixed;
+		bottom: 0;
+		height: 40px;
+    }
+
+}
+
+
+footer ul{
+	white-space: nowrap;
+	margin:0;
+    padding:0;
+}
+	
+footer li{
+	display:inline-block;
+	float:none;
+}
+	
+footer li a {
+	position: relative;
+    float: left;
+    list-style-type: none;
+    margin:0;
+    padding:0 ;
+    white-space: nowrap;
+}
+	
+a[class*=btn_], footer li a[class*=btn_] a:visited{
+	display: block;
+	text-decoration: none;
+	display: block;
+	border-radius: 4px;
+	height: 16px;
+	vertical-align: top;
+	font-family: $defaultFontFamilyNarrow;
+    font-weight: bold;
+	color: #FFF;
+	text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.5);
+	font-size: 11px;
+	margin-top: 8px;
+	margin-right: 0;
+	margin-bottom: 0;
+	margin-left: 10px;
+	padding:2px 4px;	
+}
+
+.btn_share{
+	border: 1px solid #688C28;
+	background-color: #76A02D;
+	background-image: linear-gradient(to bottom, #93C739, #76A02D);
+}
+
+a:active.btn_share{
+	box-shadow: 0 0 8px #76A02D;
+}
+
+a:hover.btn_share{
+	border: 1px solid #76A02D;
+	background-color: #87b636;
+	background-image: linear-gradient(to bottom, #9ad239, #76A02D);
+}
+
+.btn_share object{
+    float: left;
+}
+
+.btn_text {
+    float: left;
+    margin-top: -1px;
+}
+
+.btn_embed, .btn_data{
+	border: 1px solid #0B6EAB;
+	background-color: #0B71B0;
+	background-image: linear-gradient(to bottom, #0E90E0, #0B71B0);
+}
+		
+a:active.btn_embed, a:active.btn_data{
+    box-shadow: 0 0 8px #2eaaf6
+}
+	
+a:hover.btn_embed, a:hover.btn_data{
+	border: 1px solid #0B6EAB;
+	background-color: #0f9aee;
+	background-image: linear-gradient(to bottom, #0f9ef5, #0B71B0);
+}
+	
+.btn_screen, .btn_screen img{
+	display:  none;
+}
+	
+#footerLogo{
+	position: relative;
+	float: right;
+	top: -25px;
+	right: 10px;
+}
+
+#footerLogo img{
+	height: 18px;
+}
+
+
+@media only screen and (min-width: 475px) {
+
+	a[class*=btn_], footer li a[class*=btn_] a:visited{
+		border-radius: 4px;
+		height: 18px;
+		font-size: 13px;
+		margin-top: 8px;
+		margin-left: 10px;
+		padding:2px 4px;
+	}
+            
+	.btn_text {
+		margin-top: 0px;
+	}
+                
+	.btn_screen img{
+		display:  inline;
+	}
+                        
+	.btn_screen{
+		border: 1px solid #D4D4D4;
+		background-color: #E1E1E1;
+		background-image: linear-gradient(to bottom, #FBFBFB, #E1E1E1);
+	}
+    
+	a:active.btn_screen{
+		box-shadow: 0 0 6px #efefef
+	}
+    
+	a:hover.btn_screen{
+		border: 1px solid #efefef;
+		background-color: #f2f2f2;
+		background-image: linear-gradient(to bottom, #FFF, #ecebeb);
+	}
+
+	#oecdLogo{
+        top: -27px;
+	}
+
+            
+	#oecdLogo img{
+        height: 20px;
+	}
+                
+}
+

@@ -1,0 +1,12 @@
+{
+  "name": "ged-viz-flow1",
+  "_release": "c217287222",
+  "_resolution": {
+    "type": "version",
+    "tag": "one-diagram/v1",
+    "commit": "d426d6b4839b14819673faf57c2d6e1c0fe260d5"
+  },
+  "_source": "git@github.com:EuroAreaStatistics/flow-charts.git",
+  "_target": "one-diagram/v1",
+  "_originalSource": "git@github.com:EuroAreaStatistics/flow-charts.git"
+}
