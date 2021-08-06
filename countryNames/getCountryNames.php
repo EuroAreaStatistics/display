@@ -71,8 +71,6 @@ function getCountryNames ($language=null, $themeURL=null, $mode=null) {
       $lang_countries = array_replace($lang_countries, $country_long);
   } elseif ($mode == 'ISO') {
       $lang_countries = $country_ISO;
-  } elseif ($mode == 'cities') {
-      $lang_countries = json_decode(file_get_contents(__DIR__.'/cities/codeMap.json'), true);
   }
 
   return $lang_countries;

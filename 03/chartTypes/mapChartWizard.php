@@ -218,17 +218,6 @@ table.multi-column  {
   <script src='/maps.js?type=disputed&amp;th=<?= $themeURL ?>&amp;vr=worldDisputed'></script>
   <script src='/maps.js?type=config&amp;th=<?= $themeURL ?>&amp;vr=mapCode'></script>
 
-<?php elseif (isset($config['tabs'][$tabID]['type'])&&$config['tabs'][$tabID]['type'] == 'cities') : ?>
-  <script src='/maps.js?type=shapes&amp;th=<?= $themeURL ?>&amp;vr=mapShapes'></script>
-  <script src='/maps.js?type=centroidesList&amp;th=<?= $themeURL ?>&amp;vr=centroides&amp;cr=cities'></script>
-  <script src='/maps.js?type=centroides&amp;th=<?= $themeURL ?>&amp;vr=mapCentroides&amp;cr=cities'></script>
-  <script src='/maps.js?type=disputed&amp;th=<?= $themeURL ?>&amp;vr=worldDisputed'></script>
-  <script src='/maps.js?type=config&amp;th=<?= $themeURL ?>&amp;vr=mapCode'></script>
-  <script src='/countryNames.js?lg=en&amp;th=<?= $themeURL ?>&amp;mode=cities&amp;vr=cityNames'></script>
-  <script>
-    lang_countries = cityNames;
-  </script>
-
 <?php elseif (in_array('usa', $mapGroup)): ?>
   <script src='/maps.js?type=shapes&amp;th=oecd>&amp;vr=mapShapes'></script>
   <script src='/maps.js?type=centroidesList&amp;th=oecd>&amp;vr=centroides'></script>
