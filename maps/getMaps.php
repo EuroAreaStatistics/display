@@ -26,7 +26,7 @@ function getMaps ($country=null,$type='shapes',$themeURL='oecd') {
     } elseif ($type=='disputed') {
       $map = __DIR__.'/json/'.$themeURL.'/world-disputedLines.geojson';
     } elseif ($type=='config') {
-      $map = __DIR__.'/json/'.$themeURL.'/featureReferenceCode.js';
+      $map = __DIR__.'/json/'.$themeURL.'/featureReferenceCode.json';
     } else {
       $map = null;
     }
@@ -44,7 +44,7 @@ function getMaps ($country=null,$type='shapes',$themeURL='oecd') {
     } elseif ($type=='disputed') {
       $map = __DIR__.'/json/'.$themeURL.'/world-disputedLines.geojson';
     } elseif ($type=='config') {
-      $map = __DIR__.'/json/'.$themeURL.'/featureReferenceCode.js';
+      $map = __DIR__.'/json/'.$themeURL.'/featureReferenceCode.json';
     } else {
       $map = null;
     }
@@ -58,7 +58,7 @@ function getMaps ($country=null,$type='shapes',$themeURL='oecd') {
     } elseif ($type=='disputed') {
       $map = __DIR__.'/json/countries/'.strtoupper($country).'/disputedLines.geojson';
     } elseif ($type=='config') {
-      $map = __DIR__.'/json/countries/'.strtoupper($country).'/featureReferenceCode.js';
+      $map = __DIR__.'/json/countries/'.strtoupper($country).'/featureReferenceCode.json';
     } else {
       $map = null;
     }
