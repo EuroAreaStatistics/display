@@ -48,6 +48,10 @@ if (in_array('usa', $mapGroup)) {
  );
 }
 
+$mapVariant = NULL;
+if (preg_match('/^map(NUTS[0-3])$/', $template, $matches)) {
+  $mapVariant = $matches[1];
+}
 
 ?>
 
@@ -225,11 +229,18 @@ table.multi-column  {
   <script src='/maps.js?type=disputed&amp;th=oecd>&amp;vr=worldDisputed'></script>
   <script src='/maps.js?type=config&amp;th=oecd>&amp;vr=mapCode'></script>
 <?php else: ?>
-  <script src='/maps.js?type=shapes&amp;th=<?= $themeURL ?>&amp;vr=mapShapes'></script>
-  <script src='/maps.js?type=centroidesList&amp;th=<?= $themeURL ?>&amp;vr=centroides'></script>
+  <script src='/maps.js?type=shapes&amp;th=<?= $themeURL ?>&amp;vr=mapShapes&amp;variant=<?= $mapVariant ?>'></script>
+  <script src='/maps.js?type=centroidesList&amp;th=<?= $themeURL ?>&amp;vr=centroides&amp;variant=<?= $mapVariant ?>'></script>
   <script src='/maps.js?type=centroides&amp;th=<?= $themeURL ?>&amp;vr=mapCentroides'></script>
   <script src='/maps.js?type=disputed&amp;th=<?= $themeURL ?>&amp;vr=worldDisputed'></script>
   <script src='/maps.js?type=config&amp;th=<?= $themeURL ?>&amp;vr=mapCode'></script>
+  <script>
+    mapShapes.features.forEach(function (f) {
+      if (f.properties && f.properties.NUTS_NAME && !(f.properties[mapCode].toLowerCase() in lang_countries)) {
+        lang_countries[f.properties[mapCode].toLowerCase()] = f.properties.NUTS_NAME;
+      }
+    );
+  </script>
 <?php endif ?>
 
 <?php if ($themeURL == 'ecb') : ?>

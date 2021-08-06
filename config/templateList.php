@@ -319,5 +319,45 @@ $templateList = array(
                     'chartType' => 'DownloadPage',
                     'navTabs' => 0,
                            ),
-    )
+    ),
+    'mapNUTS0' => array (
+        'name'  =>  'Color-coded map',
+        'displayName'   =>  'Map (Countries)',
+        'dev'   =>  'A basic map with color-coded countries for one indicator. The first indicator is displayed on page-load. Users can switch between the indicators from a selector. The values for all indicators are shown in a tooltip on click.',
+        'image' =>  'Map.png',
+        'options' =>  array (
+                    'chartType' => 'mapWizard',
+                    'bubbleMap' => null,
+                           ),
+    ),
+    'mapNUTS1' => array (
+        'name'  =>  'Color-coded map',
+        'displayName'   =>  'Map (Level 1)',
+        'dev'   =>  'A basic map with color-coded countries for one indicator. The first indicator is displayed on page-load. Users can switch between the indicators from a selector. The values for all indicators are shown in a tooltip on click.',
+        'image' =>  'Map.png',
+        'options' =>  array (
+                    'chartType' => 'mapWizard',
+                    'bubbleMap' => null,
+                           ),
+    ),
+    'mapNUTS2' => array (
+        'name'  =>  'Color-coded map',
+        'displayName'   =>  'Map (Level 2)',
+        'dev'   =>  'A basic map with color-coded countries for one indicator. The first indicator is displayed on page-load. Users can switch between the indicators from a selector. The values for all indicators are shown in a tooltip on click.',
+        'image' =>  'Map.png',
+        'options' =>  array (
+                    'chartType' => 'mapWizard',
+                    'bubbleMap' => null,
+                           ),
+    ),
+    'mapNUTS3' => array (
+        'name'  =>  'Color-coded map',
+        'displayName'   =>  'Map (Level 3)',
+        'dev'   =>  'A basic map with color-coded countries for one indicator. The first indicator is displayed on page-load. Users can switch between the indicators from a selector. The values for all indicators are shown in a tooltip on click.',
+        'image' =>  'Map.png',
+        'options' =>  array (
+                    'chartType' => 'mapWizard',
+                    'bubbleMap' => null,
+                           ),
+    ),
 );
