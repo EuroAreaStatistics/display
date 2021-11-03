@@ -116,9 +116,6 @@ uglifyjs --source-map-include-sources --source-map regionalTable.js.map -o regio
 uglifyjs --source-map-include-sources --source-map headerFooter.js.map -o headerFooter.min.js \
     ${MODJS_DIR}/headerFooter/headerFooter.js \
 
-uglifyjs --source-map-include-sources --source-map PDFexport.js.map -o PDFexport.min.js \
-    ${MODJS_DIR}/extensions/DataPDFwizard.js \
-
 
 popd
 pushd css

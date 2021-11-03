@@ -10,7 +10,6 @@
     "jquery": "1.8.3",
     "jQuery-ajaxTransport-XDomainRequest": "1.0.4",
     "jquery-file-upload": "9.9.2",
-    "jquery-json": "git://github.com/krinkle/jquery-json#2.4.0",
     "jquery-ui": "1.11.3",
     "leaflet-dist": "0.7.2",
     "modernizr": "2.6.2",
@@ -71,10 +70,6 @@
       "js/jquery.iframe-transport.js",
       "css/jquery.fileupload.css",
       "img/*"
-    ],
-    "jquery-json": [
-      ".bower.json",
-      "build/jquery.json.min.js"
     ],
     "jquery-ui": [
       ".bower.json",

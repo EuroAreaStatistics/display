@@ -28,7 +28,6 @@ License information missing from the .bower.json files are documented below.
 * d3: BSD
 * gosquared-flags: MIT
 * highcharts-release: commercial http://shop.highsoft.com/highcharts.html
-* jquery-json: MIT
 * jquery-ui: MIT
 * leaflet-dist: BSD-2-Clause
 * modernizr: MIT
