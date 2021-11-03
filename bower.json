@@ -3,22 +3,15 @@
   "private": true,
   "ignore": [],
   "dependencies": {
-    "blueimp-canvas-to-blob": "2.1.1",
-    "blueimp-load-image": "1.13.0",
-    "blueimp-tmpl": "2.5.4",
     "bootstrap": "3.3.5",
-    "colorbrewer": "1.0.0",
     "d3": "3.4.8",
     "gosquared-flags": "git://github.com/gosquared/flags#a1f4a551ff43d22cb71b9bf9c51890ecf59ec6b6",
     "highcharts-release": "4.1.10",
-    "isotope": "1.5.25",
     "jquery": "1.8.3",
     "jQuery-ajaxTransport-XDomainRequest": "1.0.4",
     "jquery-file-upload": "9.9.2",
     "jquery-json": "git://github.com/krinkle/jquery-json#2.4.0",
     "jquery-ui": "1.11.3",
-    "jquery.isotope-masonry-column-shift-layout-mode": "https://gist.github.com/desandro/7264909/raw/3716c443a682fab1ba4c047a312c2ef41b8399b5/jquery.isotope-masonry-column-shift-layout-mode.js",
-    "kartograph.js": "git://github.com/kartograph/kartograph.js#4b8525e2e9ab4cfd97c680a21158416360e3d6ef",
     "leaflet-dist": "0.7.2",
     "modernizr": "2.6.2",
     "normalize-css": "git://github.com/necolas/normalize.css#1.0.1",
@@ -26,11 +19,9 @@
     "papa.parse": "4.1.0",
     "tablesorter": "git://github.com/christianbach/tablesorter#6b998d9dea1bb7e98bdc0e3ce4a2504a970c2140",
     "fullpage.js": "2.7.4",
-    "jquery-migrate": "1.2.1",
     "jquery-1.11.3": "jquery#1.11.3",
     "jquery-3.2.1": "jquery#3.2.1",
     "jquery-textfill": "0.6.0",
-    "requirejs": "2.1.22",
     "datatables.net": "1.10.10",
     "datatables.net-dt": "1.10.10",
     "proj4leaflet": "0.7.2",
@@ -53,10 +44,6 @@
       ".bower.json",
       "dist/*"
     ],
-    "blueimp-load-image": [
-      ".bower.json",
-      "js/load-image.js"
-    ],
     "bootstrap": [
       ".bower.json",
       "dist/js/bootstrap.*",
@@ -67,12 +54,6 @@
       ".bower.json",
       "flags/flags-iso/flat/48/*.png",
       "flags/flags-iso/flat/64/*.png"
-    ],
-    "isotope": [
-      ".bower.json",
-      "jquery.isotope.min.js",
-      "css/style.css",
-      "_posts/custom-layout-modes/2012-01-03-masonry-column-shift.html"
     ],
     "jquery": [
       ".bower.json",

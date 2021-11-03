@@ -17,7 +17,6 @@ License information missing from the .bower.json files are documented below.
 
 ## Notes
 
-* kartograph.js: unmaintained sinced Jul 16, 2015
 * leaflet-dist: only for versions <= 0.7.2, newer versions are distributed
   in the bower package 'leaflet' instead (currently ignored as a dependency in .bowerrc
   since proj4leaflet incorrectly depends on 'leaflet'
@@ -29,30 +28,8 @@ License information missing from the .bower.json files are documented below.
 * d3: BSD
 * gosquared-flags: MIT
 * highcharts-release: commercial http://shop.highsoft.com/highcharts.html
-* isotope: commercial http://isotope.metafizzy.co/v1/docs/license.html
-* jquery.isotope-masonry-column-shift-layout-mode: commercial http://isotope.metafizzy.co/v1/docs/license.html
 * jquery-json: MIT
-* jquery-migrate: MIT
 * jquery-ui: MIT
-* kartograph.js: LGPL-3.0
 * leaflet-dist: BSD-2-Clause
 * modernizr: MIT
 * tablesorter: MIT
-
-## Additional resources (not managed by Bower)
-
-* Ajaxload http://ajaxload.info/
-  License: WTFPL http://www.wtfpl.net/
-  Installed: Indicator Big 2, background #FFFFF, foreground #606060, not transparent
-  Installed: Bert2, background #FFFFF, foreground #2973BD, transparent
-  Files:
-  * 02resources/img/ajax-loader.gif
-  * 02resources/img/images/ajax-loader.gif
-  * 02resources/img/images/ajax-loader2.gif
-
-* Isotope http://isotope.metafizzy.co/v1/
-  License: commercial http://isotope.metafizzy.co/v1/docs/license.html
-  Files:
-  * 02resources/libs/isotopeMasonryColumnShift.js
-  * 02resources/libs/isotope_extend.js [ MODIFIED ]
-  * 02resources/css/isotope.css
