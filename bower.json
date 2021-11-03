@@ -18,10 +18,8 @@
     "normalize-css-3.0.3": "git://github.com/necolas/normalize.css#3.0.3",
     "papa.parse": "4.1.0",
     "tablesorter": "git://github.com/christianbach/tablesorter#6b998d9dea1bb7e98bdc0e3ce4a2504a970c2140",
-    "fullpage.js": "2.7.4",
     "jquery-1.11.3": "jquery#1.11.3",
     "jquery-3.2.1": "jquery#3.2.1",
-    "jquery-textfill": "0.6.0",
     "datatables.net": "1.10.10",
     "datatables.net-dt": "1.10.10",
     "proj4leaflet": "0.7.2",
@@ -89,11 +87,6 @@
       "jquery.tablesorter.min.js",
       "themes/blue/*.css",
       "themes/blue/*.gif"
-    ],
-    "jquery-textfill": [
-      ".bower.json",
-      "source/jquery.textfill.min.js",
-      "source/jquery.textfill.js"
     ]
   },
   "resolutions": {

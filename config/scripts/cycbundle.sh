@@ -9,20 +9,6 @@ export MODSCSS_DIR=../../03/SCSScomponents #deklariert globale variable
 
 pushd js
 
-uglifyjs --source-map-include-sources --source-map slide.js.map -o slide.min.js \
-    ${MODJS_DIR}/chartTypes/slider.js \
-    ${MODJS_DIR}/modules/dataHandler/filterLocation.js \
-    ${MODJS_DIR}/modules/dataHandler/filterYear.js \
-    ${MODJS_DIR}/modules/dataHandler/flipData.js \
-    ${MODJS_DIR}/modules/dataHandler/getHumanReadData.js \
-    ${MODJS_DIR}/modules/dataHandler/sortDimensions0.js \
-    ${MODJS_DIR}/modules/dataHandler/sortDimensions0sum.js \
-    ${MODJS_DIR}/modules/dataHandler/sortDimensions1.js \
-    ${MODJS_DIR}/modules/dataHandler/getChartWithLabels.js \
-    ${MODJS_DIR}/modules/dataHandler/getMaxCountries.js \
-    ${MODJS_DIR}/modules/highcharts/simpleChartsCore.js \
-    ${MODJS_DIR}/modules/highcharts/sliderChartConfigs.js
-
 uglifyjs --source-map-include-sources --source-map simple.js.map -o simple.min.js \
     ${MODJS_DIR}/chartTypes/simpleChart.js \
     ${MODJS_DIR}/modules/dataHandler/filterLocation.js \
@@ -140,9 +126,6 @@ pushd css
 sass ${MODSCSS_DIR}/themesWizard/config_oecd.scss --style compressed > oecd.css
 sass ${MODSCSS_DIR}/themesWizard/config_ecb.scss --style compressed > ecb.css
 sass ${MODSCSS_DIR}/themesWizard/config_default.scss --style compressed > default.css
-#
-sass ${MODSCSS_DIR}/wizardShort/main.scss --style compressed > wizardShort.css
-#
 sass ${MODSCSS_DIR}/chartTypes/barsTable.scss --style compressed > barsTable.css
 sass ${MODSCSS_DIR}/chartTypes/barsLines.scss --style compressed > barsLines.css
 sass ${MODSCSS_DIR}/chartTypes/chartStandard.scss --style compressed > chartStandard.css

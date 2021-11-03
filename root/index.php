@@ -79,13 +79,7 @@ function __urlMapper($urls) {
 
 //serve wizard files through API
     if (ACCESS=='preview') {
-
-      if (preg_match('#^/([a-z0-9-]+)/?$#', $url, $matches) && (substr($url,0,4) == '/sl-')) {
-        if (!array_key_exists($matches[0],$urls)) {
-          $urls['/'.$matches[1]]     = '/03/wizardShort?wizardProject='.$matches[1];
-        }
-
-      } else if (preg_match('#^/([a-z0-9-]+)/?$#', $url, $matches)) {
+      if (preg_match('#^/([a-z0-9-]+)/?$#', $url, $matches)) {
         if (!array_key_exists($matches[0],$urls)) {
           $urls['/'.$matches[1]]     = '/03/wizard?wizardProject='.$matches[1];
         }
@@ -95,8 +89,6 @@ function __urlMapper($urls) {
         if (!array_key_exists($matches[0],$urls)) {
           $urls['/'.$matches[1]]     = '/03/wizard?wizardProject='.$matches[1];
         }
-      } else if (preg_match('#^/([a-z0-9-]+)/?$#', $url, $matches) && (substr($url,0,4) == '/sl-') ) {
-          $urls['/'.$matches[1]]     = '/03/wizardShort?wizardProject='.$matches[1];
       }
     }
 
