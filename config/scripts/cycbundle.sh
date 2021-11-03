@@ -100,9 +100,6 @@ uglifyjs --source-map-include-sources --source-map fourLines.js.map -o fourLines
     ${MODJS_DIR}/chartTypes/fourLines/updateCharts.js \
     ${MODJS_DIR}/chartTypes/fourLines/linesInteract.js
 
-uglifyjs --source-map-include-sources --source-map downloadPage.js.map -o downloadPage.min.js \
-    ${MODJS_DIR}/chartTypes/downloadPage.js \
-
 uglifyjs --source-map-include-sources --source-map barsTable.js.map -o barsTable.min.js \
     ${MODJS_DIR}/chartTypes/barsTable.js \
 
@@ -126,7 +123,6 @@ sass ${MODSCSS_DIR}/themesWizard/config_default.scss --style compressed > defaul
 sass ${MODSCSS_DIR}/chartTypes/barsTable.scss --style compressed > barsTable.css
 sass ${MODSCSS_DIR}/chartTypes/barsLines.scss --style compressed > barsLines.css
 sass ${MODSCSS_DIR}/chartTypes/chartStandard.scss --style compressed > chartStandard.css
-sass ${MODSCSS_DIR}/chartTypes/downloadPage.scss --style compressed > downloadPage.css
 sass ${MODSCSS_DIR}/chartTypes/mapWizard.scss --style compressed > mapWizard.css
 sass ${MODSCSS_DIR}/chartTypes/simpleChart.scss --style compressed > simpleChart.css
 

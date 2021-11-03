@@ -309,17 +309,6 @@ $templateList = array(
                     'chartType' => 'regionalTable',
                            ),
     ),
-    'download' => array (
-        'name'  =>  'Download page',
-        'displayName'   =>  'Data download',
-        'dev'   =>  'A single page with download links for all charts in all tabs.',
-        'image' =>  'DownloadPage.png',
-        'numberOfCharts' => array(),
-        'options' =>  array (
-                    'chartType' => 'DownloadPage',
-                    'navTabs' => 0,
-                           ),
-    ),
     'mapNUTS0' => array (
         'name'  =>  'Color-coded map',
         'displayName'   =>  'Map (Countries)',

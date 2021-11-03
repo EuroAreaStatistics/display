@@ -8,7 +8,6 @@
     "gosquared-flags": "git://github.com/gosquared/flags#a1f4a551ff43d22cb71b9bf9c51890ecf59ec6b6",
     "highcharts-release": "4.1.10",
     "jquery": "1.8.3",
-    "jQuery-ajaxTransport-XDomainRequest": "1.0.4",
     "jquery-file-upload": "9.9.2",
     "jquery-ui": "1.11.3",
     "leaflet-dist": "0.7.2",
