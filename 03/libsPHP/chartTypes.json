@@ -47,6 +47,14 @@
     "resourcesJS" : []
   },
 
+  "DownloadPage" : {
+    "template" : "downloadPage.php",
+    "css" : ["downloadPage.css"],
+    "js"  : ["downloadPage.min.js"],
+    "resourcesCSS" : [],
+    "resourcesJS" : []
+  },
+
   "BarsLines" : {
     "template" : "barsLines.php",
     "css" : ["chartStandard.css","barsLines.css"],
