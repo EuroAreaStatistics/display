@@ -153,7 +153,7 @@ foreach ($data as $index => $table) {
 
   // Rename sheet
   $title = str_replace(array('*', ':', '/', '\\', '?', '[', ']'), '', html_entity_decode(strip_tags($table['title']), ENT_QUOTES|ENT_HTML401));
-  $title = substr($title, 0, 31);
+  $title = mb_substr($title, 0, 31, 'UTF-8');
   $sheet->setTitle($title);
 
   $sheet->mergeCells('A1:'.PHPExcel_Cell::stringFromColumnIndex($columns).'1');
