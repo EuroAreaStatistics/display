@@ -33,7 +33,7 @@ function getCountryNames ($language=null, $themeURL=null, $mode=null) {
     $country_groups = array_replace($country_groups, array_intersect_key($country_theme['en'], $country_groups));
   }
   if (file_exists(__DIR__.'/json/langCountryGroups_'.$language.'.json')) {
-    $country_groups = array_replace($country_groups, array_filter(json_decode(file_get_contents(__DIR__.'/json/langCountryGroups_'.$language.'.json'), true), function ($s) { return $s === ''; }));
+    $country_groups = array_replace($country_groups, array_filter(json_decode(file_get_contents(__DIR__.'/json/langCountryGroups_'.$language.'.json'), true), function ($s) { return $s !== ''; }));
   }
   if (isset($country_theme[$language])) {
     $country_groups = array_replace($country_groups, array_intersect_key($country_theme[$language], $country_groups));
