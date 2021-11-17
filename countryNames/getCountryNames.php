@@ -22,7 +22,9 @@ function getCountryNames ($language=null, $themeURL=null, $mode=null) {
     $country_list = array_replace($country_list, array_intersect_key($country_theme['en'], $country_list));
   }
   if (file_exists(__DIR__.'/json/langCountries_'.$language.'.json')) {
-    $country_list = array_replace($country_list, json_decode(file_get_contents(__DIR__.'/json/langCountries_'.$language.'.json'), true));
+    $country_list_lang = json_decode(file_get_contents(__DIR__.'/json/langCountries_'.$language.'.json'), true);
+    // use country order of language
+    $country_list = array_replace($country_list_lang, $country_list, $country_list_lang);
   }
   if (isset($country_theme[$language])) {
     $country_list = array_replace($country_list, array_intersect_key($country_theme[$language], $country_list));
