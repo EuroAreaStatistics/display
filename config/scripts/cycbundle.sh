@@ -9,7 +9,7 @@ export MODSCSS_DIR=../../03/SCSScomponents #deklariert globale variable
 
 pushd js
 
-uglifyjs --source-map-include-sources --source-map simple.js.map -o simple.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map simple.js.map -o simple.min.js \
     ${MODJS_DIR}/chartTypes/simpleChart.js \
     ${MODJS_DIR}/modules/dataHandler/filterLocation.js \
     ${MODJS_DIR}/modules/dataHandler/filterYear.js \
@@ -24,7 +24,7 @@ uglifyjs --source-map-include-sources --source-map simple.js.map -o simple.min.j
     ${MODJS_DIR}/modules/highcharts/simpleChartsCore.js \
     ${MODJS_DIR}/modules/highcharts/simpleChartConfigs.js
 
-uglifyjs --source-map-include-sources --source-map stacked.js.map -o stacked.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map stacked.js.map -o stacked.min.js \
     ${MODJS_DIR}/chartTypes/stackedChart.js \
     ${MODJS_DIR}/modules/dataHandler/filterDimension.js \
     ${MODJS_DIR}/modules/dataHandler/flipData.js \
@@ -34,7 +34,7 @@ uglifyjs --source-map-include-sources --source-map stacked.js.map -o stacked.min
     ${MODJS_DIR}/modules/highcharts/simpleChartsCore.js \
     ${MODJS_DIR}/modules/highcharts/simpleChartConfigs.js
 
-uglifyjs --source-map-include-sources --source-map mapWizardSimple.js.map -o mapWizardSimple.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map mapWizardSimple.js.map -o mapWizardSimple.min.js \
     ${MODJS_DIR}/modules/dataHandler/getHumanReadData.js \
     ${MODJS_DIR}/modules/dataHandler/getLatestYearData.js \
     ${MODJS_DIR}/modules/dataHandler/filterYear.js \
@@ -56,7 +56,7 @@ uglifyjs --source-map-include-sources --source-map mapWizardSimple.js.map -o map
     ${MODJS_DIR}/modules/mapTeaser/mapTeaserText.js \
     ${MODJS_DIR}/modules/mapTeaser/mapTeaserTextMulti.js
 
-uglifyjs --source-map-include-sources --source-map mapWizardLayer.js.map -o mapWizardLayer.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map mapWizardLayer.js.map -o mapWizardLayer.min.js \
     ${MODJS_DIR}/modules/dataHandler/filterLocation.js \
     ${MODJS_DIR}/modules/dataHandler/filterYear.js \
     ${MODJS_DIR}/modules/dataHandler/flipData.js \
@@ -91,7 +91,7 @@ uglifyjs --source-map-include-sources --source-map mapWizardLayer.js.map -o mapW
     ${MODJS_DIR}/modules/highcharts/simpleChartsCore.js \
     ${MODJS_DIR}/modules/highcharts/simpleChartConfigs.js
 
-uglifyjs --source-map-include-sources --source-map fourLines.js.map -o fourLines.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map fourLines.js.map -o fourLines.min.js \
     ${MODJS_DIR}/modules/dataHandler/getHumanReadData.js \
     ${MODJS_DIR}/chartTypes/fourLines/main.js \
     ${MODJS_DIR}/chartTypes/fourLines/drawFourLinesMulti.js \
@@ -100,20 +100,20 @@ uglifyjs --source-map-include-sources --source-map fourLines.js.map -o fourLines
     ${MODJS_DIR}/chartTypes/fourLines/updateCharts.js \
     ${MODJS_DIR}/chartTypes/fourLines/linesInteract.js
 
-uglifyjs --source-map-include-sources --source-map downloadPage.js.map -o downloadPage.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map downloadPage.js.map -o downloadPage.min.js \
     ${MODJS_DIR}/chartTypes/downloadPage.js \
 
-uglifyjs --source-map-include-sources --source-map barsTable.js.map -o barsTable.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map barsTable.js.map -o barsTable.min.js \
     ${MODJS_DIR}/chartTypes/barsTable.js \
 
-uglifyjs --source-map-include-sources --source-map barsLines.js.map -o barsLines.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map barsLines.js.map -o barsLines.min.js \
     ${MODJS_DIR}/chartTypes/barsLines.js \
 
-uglifyjs --source-map-include-sources --source-map regionalTable.js.map -o regionalTable.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map regionalTable.js.map -o regionalTable.min.js \
     ${MODJS_DIR}/chartTypes/regionalTable.js \
 
 
-uglifyjs --source-map-include-sources --source-map headerFooter.js.map -o headerFooter.min.js \
+uglifyjs --source-map-include-sources -c drop_console=true --source-map headerFooter.js.map -o headerFooter.min.js \
     ${MODJS_DIR}/headerFooter/headerFooter.js \
 
 
