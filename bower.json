@@ -26,7 +26,8 @@
     "ged-viz-flow1": "git@github.com:EuroAreaStatistics/flow-charts.git#one-diagram/v1",
     "ged-viz-flow": "git@github.com:EuroAreaStatistics/flow-charts.git#two-diagrams/v1",
     "chosen": "1.6.2",
-    "cookieconsent": "git://github.com/strictd/cookieconsent#c18639f8b7a4161ecb5413f4e5b61e8687d4f4fa"
+    "cookieconsent": "git://github.com/strictd/cookieconsent#c18639f8b7a4161ecb5413f4e5b61e8687d4f4fa",
+    "mobx": "https://unpkg.com/mobx@4.15.7/lib/mobx.umd.min.js"
   },
   "preen": {
     "ged-viz-flow1": [

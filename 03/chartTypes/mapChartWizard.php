@@ -246,6 +246,7 @@ table.multi-column  {
 <?php if ($themeURL == 'ecb') : ?>
   <script src='<?= $liveURL ?>/resources/proj4/dist/proj4.js'></script>
   <script src='<?= $liveURL ?>/resources/proj4leaflet/src/proj4leaflet.js'></script>
+  <script src='<?= $liveURL ?>/resources/mobx/index.js'></script>
 <?php endif ?>
 
 <ul class="tabs">
@@ -277,150 +278,188 @@ table.multi-column  {
 </ul>
 
 <script>
-
-var chartType       = <?= json_encode($chartType) ?>;
-var MapColors       = <?= json_encode($MapColors) ?>;
-var bubbleMap       = <?= json_encode($bubbleMap) ?>;
-var MapGroup        = <?= json_encode($mapGroup) ?>;
+var chartType = <?= json_encode($chartType) ?>;
+var MapColors = <?= json_encode($MapColors) ?>;
+var bubbleMap = <?= json_encode($bubbleMap) ?>;
+var MapGroup = <?= json_encode($mapGroup) ?>;
 var initialMapFocus = <?= json_encode($initialMapFocus) ?>;
-
 var subTabs = <?= json_encode($subTabs) ?>;
+var counterpartAreas = <?= json_encode($counterpartAreas) ?>;
 
-var DataforMapAll = getMapData (wizardConfig,page,Object.keys(centroides),Chart);
+var DataforMapAll = getMapData(
+  wizardConfig,
+  page,
+  Object.keys(centroides),
+  Chart
+);
 
-var DataforMap = DataforMapAll['map'];
-var DataforMap1 = DataforMapAll['map1'];
-var flowStatus = DataforMapAll['flow'];
+var DataforMap = DataforMapAll["map"];
+var DataforMap1 = DataforMapAll["map1"];
+var flowStatus = DataforMapAll["flow"];
 
 var DataforFlow;
 
+// sync selected year to all layers
+mobx.reaction(
+  function () {
+    return DataforMap[DataforMapAll.defaultLayer].selectedYear;
+  },
+  function (cur) {
+    // console.log('sync', cur);
+    DataforMap.forEach(function (d) {
+      d.selectedYear = cur;
+    });
+  },
+  { name: "syncSelectedYear" }
+);
 
-//define map projection
-if (MapGroup.indexOf('usa') == -1) {
-  L.CRS.CustomZoom = new L.Proj.CRS.TMS('EPSG:3035',
-    '+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 ' +
-    '+ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
-    [
-      -8426600,
-      -9526565.4062,
-      17068403.7395,
-      15968500
-    ],
+// define map projection
+if (MapGroup.indexOf("usa") == -1) {
+  L.CRS.CustomZoom = new L.Proj.CRS.TMS(
+    "EPSG:3035",
+    "+proj=laea +lat_0=52 +lon_0=10 +x_0=4321000 +y_0=3210000 " +
+      "+ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs",
+    [-8426600, -9526565.4062, 17068403.7395, 15968500],
     {
-      origin: [
-        -8426600,
-        15968500
-      ],
+      origin: [-8426600, 15968500],
       resolutions: [
-        66145.9656252646,
-        26458.386250105836,
-        13229.193125052918,
-        6614.596562526459,
-        2645.8386250105837,
-        1322.9193125052918,
-        661.4596562526459,
-        264.5838625010584,
-        132.2919312505292,
-        66.1459656252646
-      ]
-    });
+        66145.9656252646, 26458.386250105836, 13229.193125052918,
+        6614.596562526459, 2645.8386250105837, 1322.9193125052918,
+        661.4596562526459, 264.5838625010584, 132.2919312505292,
+        66.1459656252646,
+      ],
+    }
+  );
 } else {
-    L.CRS.CustomZoom = L.extend({}, L.CRS.EPSG3857, {
-      scale: function (zoom) {
-        return 256 * Math.pow(1.5, zoom);
-      }
-    });
+  L.CRS.CustomZoom = L.extend({}, L.CRS.EPSG3857, {
+    scale: function (zoom) {
+      return 256 * Math.pow(1.5, zoom);
+    },
+  });
 }
 
-//initiate map, add legend and map layers
+// initiate map, add legend and map layers
 var mapdataviz;
-if (MapGroup.indexOf('usa') == -1) {
-  mapdataviz = L.map('map', {crs: L.CRS.CustomZoom, zoomControl: false, minZoom: 2})
-                .setView([50.505, 4], 3);
-  $('#map').css('background-color', '#d4ebf2');
+if (MapGroup.indexOf("usa") == -1) {
+  mapdataviz = L.map("map", {
+    crs: L.CRS.CustomZoom,
+    zoomControl: false,
+    minZoom: 2,
+  }).setView([50.505, 4], embed == 2 ? 2 : 3);
+  $("#map").css("background-color", "#d4ebf2");
 } else {
   if ($(window).width() < 750) {
-    mapdataviz = L.map('map', {crs: L.CRS.CustomZoom, zoomControl: false})
-                  .setView([initialMapFocus['small'][0], initialMapFocus['small'][1]], initialMapFocus['small'][2]);
+    mapdataviz = L.map("map", {
+      crs: L.CRS.CustomZoom,
+      zoomControl: false,
+    }).setView(
+      [initialMapFocus["small"][0], initialMapFocus["small"][1]],
+      initialMapFocus["small"][2]
+    );
   } else {
-    mapdataviz = L.map('map', {crs: L.CRS.CustomZoom, zoomControl: false})
-                  .setView([initialMapFocus['large'][0], initialMapFocus['large'][1]], initialMapFocus['large'][2]);
+    mapdataviz = L.map("map", {
+      crs: L.CRS.CustomZoom,
+      zoomControl: false,
+    }).setView(
+      [initialMapFocus["large"][0], initialMapFocus["large"][1]],
+      initialMapFocus["large"][2]
+    );
   }
 }
-if (embed==='2' || embed==='3') {
-  mapdataviz.attributionControl.setPrefix('');
-  mapdataviz.attributionControl.addAttribution(lang_labels.mapSource);
-  DataforMap.forEach(function (i) { i.definition = ''; });
-}
-L.control.zoom({
-  zoomInTitle: lang_labels['mapZoomIn'],
-  zoomOutTitle: lang_labels['mapZoomOut']
-}).addTo(mapdataviz);
+L.control
+  .zoom({
+    zoomInTitle: lang_labels["mapZoomIn"],
+    zoomOutTitle: lang_labels["mapZoomOut"],
+  })
+  .addTo(mapdataviz);
 
 L.Control.RelatedData = L.Control.extend({
- initialize: function (labels, options) {
+  initialize: function (labels, options) {
     L.Util.setOptions(this, options);
     this._labels = labels;
-    $('body').on('click', '.ui-widget-overlay', function() {
-       $('.ui-dialog-content').dialog('close');
+    $("body").on("click", ".ui-widget-overlay", function () {
+      $(".ui-dialog-content").dialog("close");
     });
   },
   onAdd: function (map) {
     var $el = $('<div class="leaflet-control-layers related-data-control">');
-    $el.on('dblclick', function () { return false; });
-    var $table = $('<table>').appendTo($el);
+    $el.on("dblclick", function () {
+      return false;
+    });
+    var $table = $("<table>").appendTo($el);
+    // console.log('map.onAdd');
     this._labels.forEach(function (entry, idx) {
-      var $row = $('<tr class="accordion"><td class="related-data-control-box"><div></div></td></tr>')
-        .append($('<td>').text(entry.label));
+      var $row = $(
+        '<tr class="accordion"><td class="related-data-control-box"><div></div></td></tr>'
+      ).append($("<td>").text(entry.label));
       $row.appendTo($table);
-      $('<tr class="related-data-teasser"  style="display:none"><td colspan=2>').appendTo($table);
+      $('<tr class="related-data-teasser"  style="display:none">').appendTo(
+        $table
+      );
+
+      var $teaser = $row.next();
+
+      mobx.autorun(
+        function () {
+          // console.log('update related teaserText');
+          var teaserText = mapTeaserText(entry.id);
+          $teaser.html("<td colspan=2>");
+          $teaser.children("td").html(teaserText);
+          $teaser.find(".tooltipTitle").hide();
+          if (entry.tooltip != null) {
+            $teaser
+              .children("td")
+              .find("tr")
+              .first()
+              .append(
+                $('<td class="info-icon">').append(
+                  $('<img alt="Info" title="Info">')
+                    .attr("src", staticURL + "/img/info.svg")
+                    .on("click", function () {
+                      $(entry.tooltip).dialog({
+                        draggable: false,
+                        modal: true,
+                        width: "auto",
+                        close: function () {
+                          $(this).remove();
+                        },
+                      });
+                    })
+                )
+              );
+          }
+        },
+        { name: "showData" }
+      );
+
       function showData() {
-        var teaserText = mapTeaserText(entry.id);
-        var $teaser = $row.next();
-        $teaser.children('td').html(teaserText);
-        if (entry.tooltip != null) {
-          $teaser.children('td').find('tr').first().append(
-            $('<td class="info-icon">').append(
-              $('<img alt="Info" title="Info">').attr('src', $('.info img').attr('src'))
-              .on('click', function () {
-                $(entry.tooltip).dialog({
-                  draggable: false,
-                  modal: true,
-                  width: 'auto',
-                  close: function () {
-                    $(this).remove();
-                  }
-                });
-              })));
-        }
-        $teaser.find('.tooltipTitle').hide();
-        $('.ui-tooltip').hide();
-        $row.siblings('.related-data-teasser').not($teaser).hide();
+        $(".ui-tooltip").hide();
+        $row.siblings(".related-data-teasser").not($teaser).hide();
         $teaser.toggle();
         return false;
       }
+
       $row.click(showData);
     });
     return $el[0];
   },
-  onRemove: function(map) {
+  onRemove: function (map) {},
+  updateColors: function (getColor) {
+    var self = this;
+    $(".related-data-control-box div", this.getContainer()).css(
+      "background-color",
+      function (i) {
+        return getColor(self._labels[i].id) || "";
+      }
+    );
   },
- updateColors: function (getColor) {
-   var self = this;
-   $('.related-data-control-box div', this.getContainer()).css('background-color', function (i) { return getColor(self._labels[i].id) || ''; });
- }
 });
 
-L.control.relatedData = function(labels, options) {
+L.control.relatedData = function (labels, options) {
   return new L.Control.RelatedData(labels, options);
-}
+};
 
-var counterpartAreas = <?= json_encode($counterpartAreas) ?>;
-var relatedCodes = [
-  'R12',
-  '4A',
-  '9A',
-];
+var relatedCodes = ["R12", "4A", "9A"];
 var related = [];
 relatedCodes.forEach(function (iso) {
   var columns = 3;
@@ -429,19 +468,20 @@ relatedCodes.forEach(function (iso) {
     var areas = counterpartAreas[iso.toLowerCase()];
     var tooltip = null;
     if (areas) {
-      tooltip = "<div title='"+label+"'><table autofocus class='multi-column'>";
+      tooltip =
+        "<div title='" + label + "'><table autofocus class='multi-column'>";
       var i, j;
       var remainder = areas.length % columns;
       var fullRows = (areas.length - remainder) / columns;
       var rows = fullRows + (remainder ? 1 : 0);
-      for (i = 0; i < rows ; i++) {
+      for (i = 0; i < rows; i++) {
         tooltip += "<tr>";
-        for (j = 0; j < columns ; j++) {
+        for (j = 0; j < columns; j++) {
           if (i === fullRows && j === remainder) {
             break;
           }
           tooltip += "<td>";
-          tooltip += areas[i + j*fullRows + Math.min(j, remainder)];
+          tooltip += areas[i + j * fullRows + Math.min(j, remainder)];
           tooltip += "</td>";
         }
         tooltip += "</tr>";
@@ -456,42 +496,43 @@ relatedCodes.forEach(function (iso) {
   }
 });
 if (related.length) {
-  var relatedDataControl = L.control.relatedData(related, {position: 'topright'}).addTo(mapdataviz);
+  var relatedDataControl = L.control
+    .relatedData(related, { position: "topright" })
+    .addTo(mapdataviz);
 }
 
-var popup = new L.Popup({autoPan: true, autoPanPaddingTopLeft: [50, 10], maxWidth: 400});
-setLegend(chartType,bubbleMap);
-addMapLayers (bubbleMap,mapdataviz,flowStatus);
+var popup = new L.Popup({
+  autoPan: true,
+  autoPanPaddingTopLeft: [50, 10],
+  maxWidth: 400,
+});
+setLegend(chartType, bubbleMap);
+addMapLayers(bubbleMap, mapdataviz, flowStatus);
 
-//add lines for disputed territories
-if (typeof worldDisputed !== 'undefined') {
-  var disputedLinesWizard = getDisputedLines(worldDisputed,MapGroup);
+// add lines for disputed territories
+if (typeof worldDisputed !== "undefined") {
+  var disputedLinesWizard = getDisputedLines(worldDisputed, MapGroup);
 }
 
-var disputedLines = L.geoJson(
-    disputedLinesWizard,  {
-        style: getStyleDisputedLine,
-    }).addTo(mapdataviz);
+var disputedLines = L.geoJson(disputedLinesWizard, {
+  style: getStyleDisputedLine,
+}).addTo(mapdataviz);
 
 function getStyleDisputedLine(feature) {
   return {
     color: "#BBBBBB",
     weight: 1.5,
     opacity: 1,
-    dashArray: [2,4],
+    dashArray: [2, 4],
   };
 }
 
-$( document ).tooltip({ tooltipClass: "custom-tooltip-styling" });
+$(document).tooltip({ tooltipClass: "custom-tooltip-styling" });
 
 $(function () {
   // adjust map size after page has loaded
-  setTimeout(function () { mapdataviz.invalidateSize(); }, 0);
+  setTimeout(function () {
+    mapdataviz.invalidateSize();
+  }, 0);
 });
-
 </script>
-
-
-
-
-

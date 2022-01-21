@@ -38,6 +38,12 @@
               </ul>
             </div>
           </div>
+          <div class="sliderWrapper" style="clear:both;padding-bottom:3px;padding-top:5px">
+            <div class="sliderContainer">
+              <div name="sliderMapColor" style="width:calc(100% - 1.8em - 13px);margin-right:10px;display:inline-block;vertical-align:middle"></div>
+              <input type="button" style="font-size:0.9em;height:1.8em;width:1.8em;padding:0"/>
+            </div>
+          </div>
           <div class='legendText' id='legendSubtextColor'></div>
 <?php if (isset($lang['mapSource'])): ?>
           <div class='legendText' style='clear:both'><?= $lang['mapSource'] ?></div>
