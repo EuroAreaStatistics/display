@@ -1,7 +1,7 @@
 <?php
 
 //ini_set ('display_errors','ON');
-ini_set('memory_limit','285M');
+ini_set('memory_limit','350M');
 
 set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__.'/../vendors/phpexcel');
 set_include_path(get_include_path() . PATH_SEPARATOR . __DIR__.'/../03/libsPHP');
