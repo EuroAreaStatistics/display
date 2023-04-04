@@ -33,6 +33,7 @@ $themeURL = 'default';                              //define your theme (choose 
 //New features to enable or disable
 $features = array(
   'embedSingle' => FALSE, // embed form to embed a single indicator [ALPHA]
+  'buttonFlags' => FALSE, // add country flags to country buttons in trends template
 );
 
 ========================
