@@ -200,6 +200,7 @@ $objWriter = new PHPExcel_Writer_Excel2007($objPHPExcel);
 
 $tempFile = TEMP_PATH.'/data'.getmypid().'.xlsx';
 
+ignore_user_abort();
 $objWriter->save($tempFile);
 readfile($tempFile);
 unlink($tempFile);
