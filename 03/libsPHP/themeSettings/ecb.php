@@ -35,6 +35,7 @@ $bankLinks = array (
    'Τράπεζα της Ελλάδος' => 'http://www.bankofgreece.gr/',
    'Banco de España' => 'http://www.bde.es/',
    'Banque de France' => 'http://www.banque-france.fr/',
+   'Hrvatska narodna banka' => 'https://www.hnb.hr/',
    'Banca d’Italia' => 'http://www.bancaditalia.it/',
    'Κεντρική Τράπεζα της Κύπρου' => 'http://www.centralbank.gov.cy/',
    'Latvijas Banka' => 'http://www.bank.lv/',
