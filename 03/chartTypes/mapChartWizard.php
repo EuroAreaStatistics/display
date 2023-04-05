@@ -184,7 +184,7 @@ table.multi-column  {
 
 <?php endif ?>
 
-<?php if ($config['tabs'][$tabID]['type'] == 'flow'): ?>
+<?php if (isset($config['tabs'][$tabID]['type']) && $config['tabs'][$tabID]['type'] == 'flow'): ?>
 
   #map {
     width:80%;
@@ -258,7 +258,7 @@ table.multi-column  {
   <li class="active">
     <div id='main'>
 <?php
-  if ($config['tabs'][$tabID]['type'] != 'flow') {
+  if (!isset($config['tabs'][$tabID]['type']) || $config['tabs'][$tabID]['type'] != 'flow') {
     if (isset($config['tabs'][$tabID]['specialLegend'])) {
       require __DIR__.'/mapChartWizard/specialLegends/'.$config['tabs'][$tabID]['specialLegend'].'.php';
     } else {
@@ -267,7 +267,7 @@ table.multi-column  {
   }
 
 ?>
-<?php if ($config['tabs'][$tabID]['type'] == 'flow') {require __DIR__.'/mapChartWizard/flowContainer.php';} ?>
+<?php if (isset($config['tabs'][$tabID]['type']) && $config['tabs'][$tabID]['type'] == 'flow') {require __DIR__.'/mapChartWizard/flowContainer.php';} ?>
     <img src="<?= $staticURL ?>/img/16x9.png" class="map-scaler" alt="">
     <div id='map'></div>
 
