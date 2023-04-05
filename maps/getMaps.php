@@ -7,7 +7,7 @@ function getMaps ($country=null,$type='shapes',$themeURL='oecd',$variant) {
     $themeURL = 'oecd';
   }
 
-  $variants = ['', 'NUTS0', 'NUTS1', 'NUTS2', 'NUTS3'];
+  $variants = ['', 'NUTS0', 'NUTS1', 'NUTS2', 'NUTS3', 'counterparties'];
   if (!isset($variant) || !in_array($variant,$variants)) {
     $variant = $variants[0];
   }
