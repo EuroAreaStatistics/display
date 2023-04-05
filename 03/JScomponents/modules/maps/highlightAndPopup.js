@@ -21,6 +21,7 @@ function highlightAndPopup(feature, layer) {
       "fin",
       "fra",
       "grc",
+      "hrv",
       "irl",
       "ita",
       "ltu",

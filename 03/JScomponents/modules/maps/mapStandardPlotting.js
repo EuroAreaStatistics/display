@@ -60,7 +60,7 @@ function getColorCountryShapesStyleGeneric(layerData) {
         fillColor: landmassNA,
         className: "hasValue"
       };
-    } else if (feature && feature.properties && $.inArray(feature.properties[mapCode].toString().toLowerCase(), ["aut", "bel", "cyp", "deu", "esp", "est", "fin", "fra", "grc", "irl", "ita", "ltu", "lux", "lva", "mlt", "nld", "prt", "svk", "svn"]) > -1) {
+    } else if (feature && feature.properties && $.inArray(feature.properties[mapCode].toString().toLowerCase(), ["aut", "bel", "cyp", "deu", "esp", "est", "fin", "fra", "grc", "hrv", "irl", "ita", "ltu", "lux", "lva", "mlt", "nld", "prt", "svk", "svn"]) > -1) {
       return {
         weight: landmassBorderWidth,
         opacity: 1,
